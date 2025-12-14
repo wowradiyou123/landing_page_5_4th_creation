@@ -1,0 +1,94 @@
+:root {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Inter', 'Pretendard',
+    'Noto Sans JP', 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #000000;
+  background-color: #ffffff;
+
+  /* === 메인 컬러 팔레트 === */
+  /* 1) 페이지/배경: 기본은 화이트, 핑크는 Hero 섹션에서만 사용 */
+  --color-bg-page: #ffffff;
+  --color-surface-soft: #f9fafb;
+  --color-surface-card: #ffffff; /* 카드/섹션 배경은 화이트 */
+  --color-surface-elevated: #ffffff;
+
+  /* 2) 주요 강조 / 버튼: 레드 */
+  --color-primary: #d30000;
+
+  /* 3) 포인트 텍스트 / 보더: 옐로 */
+  --color-accent: #fcd12a;
+  --color-accent-soft: rgba(252, 209, 42, 0.16);
+
+  /* 서브 텍스트 / 보더 */
+  --color-border-subtle: #e5e5e5;
+
+  /* 기존 코드 호환용 별칭 */
+  --color-accent-warm: #d30000;  /* 동일: 주요 버튼 */
+  --color-accent-earth: #795c34; /* 동일: 내비/텍스트 포인트 */
+
+  --color-text-primary: #1a1a1a;
+  --color-text-secondary: #6b6b6b;
+
+  /* Spacing scale */
+  --space-2xs: 0.25rem;
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+
+  /* Layout spacing system */
+  --space-section-y: 6.25rem; /* 섹션 상하 패딩 100px */
+  --space-grid: 1.5rem; /* 그리드 간격 ~24px */
+  --space-component: 1.25rem; /* 컴포넌트 간 간격 ~20px */
+
+  /* Layout */
+  --page-width: 1200px;
+  --space-page-x: 5rem; /* 80px */
+
+  /* Radius */
+  --radius-card: 10px;
+  --radius-pill: 999px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--color-bg-page);
+}
+
+body,
+#app {
+  width: 100%;
+}
+
+#app {
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  font-family: inherit;
+}
